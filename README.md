@@ -1,6 +1,6 @@
-# Komga for noob setup so anyone can understand (hopefully)
+# starting komga for noob so anyone can understand (hopefully)
 
-I too struggled on how to start komga when I first found out about it. And prolly its still a struggle for many especially if they don't know what .jar file is. I thought I'll make a guide of how I run komga so a noob can run it more easily than scream at the internet on how to run and use komga for days or maybe even years (I think couple of years for me).
+I too struggled on how to start komga when I first found out about it. And prolly its still a struggle for many especially if they don't know what .jar file or any code related jargon is. I thought I'll make a guide of how I run komga right now so a noob can run it more easily than scream at the internet on how to start komga for days or maybe even years (I think couple of years for me).
 
 ## What to download
 
@@ -8,15 +8,17 @@ First you need the .jar file of the latest release from [Komga's github](https:/
 
 ### for Windows
 
-Download the 'startkomga.exe' file from my [releases]().
+Download the 'startkomga.exe' file from my [releases](https://github.com/BaccanoMob/starting-komga-for-noob/releases).
 
-But if you want to show off you are a noob hacker to others and want the log console as well like below download 'startkomga_log.exe' version. I highly recommend using 'startkomga_log.exe' for the first time then switch over to the other version if needed so you'll be more aware if komga is running or not.
+But if you want to show off you are a noob hacker to others and want the log console as well like below download 'startkomga_log.exe' version.
 
 <img width="972" alt="image" src="https://github.com/BaccanoMob/komga-for-noob-setup/assets/82655889/5330bd12-436c-4a19-88bf-a08221b0160e">
 
+I highly recommend using 'startkomga_log.exe' for the first time then switch over to the other version if needed so you'll be more aware if komga is running or not.
+
 ### for Linux
 
-Download the 'startkomga.sh' file.
+Download the 'startkomga.sh' file from my [releases](https://github.com/BaccanoMob/starting-komga-for-noob/releases).
 
 This will prolly work for all versions including MacOS (but I don't have one to test it out so feel free to let me know by raising an issue). I'm a noob too so I'm not 100% sure but 99.9% yes it should work as long as shell scripts execute.
 
@@ -38,7 +40,7 @@ You might need to make the shell script executable by running the following comm
 
 or if you think using terminal is pro level then I got a noob version as well. 
 
-Right-click the .sh file -> Properties -> Permissions -> Make sure execute is ticked (These should be available for ubuntu or raspberry pi)
+Right-click the .sh file -> Properties -> Permissions -> Make sure execute is ticked or change it to anyone or something along those lines (These should be available for ubuntu or raspberry pi)
 
 ## Java installation
 
@@ -64,7 +66,7 @@ Just double click the .exe and it should run as long the jar file is in the same
 
 Just double click the .sh and it should run as long the jar file is in the same folder. Executing in terminal should have log console and just execute will do it in background.
 
-IMPORTANT NOTE: Depending on the system the start up time might vary. For example, it takes around 10 seconds to start the server in my windows PC but my Raspberry Pi takes around 2.5 minutes to start. So make sure to wait for a few minutes before cursing me or komga isn't working and flipping over tables. Also lauching the first time might take slightly longer as komga needs to set things up.
+IMPORTANT NOTE: Depending on the system the start up time might vary. For example, it takes around 10 seconds to start the server in my windows PC but my Raspberry Pi takes around 1 minute to start manually or around 2 minutes if automatic. So make sure to wait for a few minutes before cursing me or komga isn't working and flipping over tables. Also lauching the first time might take slightly longer as komga needs to set things up for the first time not 100% sure.
 
 ## How to access komga
 
@@ -90,7 +92,9 @@ Will add this soon after taking break
 
 ## Code related gibbirsh only for people who want to how this .exe or .sh works
 
-Both .exe and .sh reads the filename of the first .jar file in the same directory and runs the jar file using java.
+The .exe the filename of the first .jar file in the same directory and runs the .jar file using java.
+
+The .sh file first changes directory to Komga folder or whatever name you created and then finds & runs the .jar file using java
 
 It is possible to run the .jar file with .bat files for windows (.bat files are Windows equivalent to .sh in Linux).
 
@@ -102,4 +106,4 @@ or without log console
 
     start javaw -jar komga-X-Y-Z.jar
 
-Double clicking should work the same way as an .exe file would. But the annoying part is you can't pin .bat files to start menu so I made .exe files using python and pyinstaller. (I start komga manually for windows so I wanted it like this)
+Double clicking should work the same way as an .exe file would. But the annoying part is you can't pin .bat files to start menu and you have to specify the .jar file name so I made .exe files using python and pyinstaller to automate the process.
