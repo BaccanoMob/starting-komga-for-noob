@@ -58,15 +58,13 @@ run `sudo apt install default-jre` in terminal to install java using the termina
 
 ## How to run komga
 
-### for Windows
+Just double click the .exe (for Windows) or .sh (for Linux) and it should run as long the jar file is in the same folder. 
 
-Just double click the .exe and it should run as long the jar file is in the same folder. If you're going without log console you literally won't see what is happening so please be patient. If you ran with log console you'll see how it fast/slow it runs. I highly recommend using 'startkomga_log.exe' for the first time then switch over to the other version if you want to so you'll be more aware if komga is running or not.
+If you're running without log console you literally won't be aware of it running or not so please be patient. For the first time, I highly recommend using 'startkomga_log.exe' (for Windows) or 'Executing in terminal' (for Linux) for the first time so you'll know if komga is working or not.
 
-### for Linux
+For Linux, you can click just 'Execute' if you do not want the log.
 
-Just double click the .sh and it should run as long the jar file is in the same folder. Executing in terminal should have log console and just execute will do it in background.
-
-IMPORTANT NOTE: Depending on the system the start up time might vary. For example, it takes around 10 seconds to start the server in my windows PC but my Raspberry Pi takes around 1 minute to start manually or around 2 minutes if automatic. So make sure to wait for a few minutes before cursing me or komga isn't working and flipping over tables. Also lauching the first time might take slightly longer as komga needs to set things up for the first time not 100% sure.
+IMPORTANT NOTE: Depending on the system the start up time might vary. For example, it takes around 10 seconds to start the server in my windows PC but my Raspberry Pi takes around 1 minute to start manually or around 2 minutes if automatic. So make sure to wait for a few minutes before cursing me or komga isn't working and flipping over tables. Also lauching the first time might take slightly longer as komga needs to set things up for the first time.
 
 ## How to access komga
 
@@ -76,9 +74,9 @@ We can get the device's IP address using `ipconfig` in Windows' command prompt o
 
 IMPORTANT NOTE: localhost is used if youre using komga from the device itself. ip address is needed when you try to access from a different PC/Laptop/Phone.
 
-Possible stupid noob mistake: Make sure mobile phones are not running only in data and all devices are on the same wifi (I made this noob mistake multiple times). Also yes, no matter how fast 5G mobile data speed is, komga wont run unless connected to wifi.
+Possible stupid noob mistake: Make sure mobile phones are not running only in data and all devices are on the same wifi (I made this noob mistake multiple times). Also, no matter how fast 5G mobile data speed is, komga wont run unless connected to wifi.
 
-ANOTHER NOTE: IP address might change from time to time, it can be avoided by setting a static ip address (yes, its dynamic by default.). If people need me to inlcude a guide it as well raise a issue. 
+ANOTHER NOTE: IP address might change from time to time, it can be avoided by setting a static ip address. (Its tricky to do, let me know if anyone needs me to give a short guide by raising an issue)
 
 And with this you can follow [Komga's official docs](https://komga.org/guides/libraries.html) from here on out on how to use komga.
 
@@ -92,11 +90,11 @@ Will add this soon after taking break
 
 ## Code related gibbirsh only for people who want to how this .exe or .sh works
 
-The .exe the filename of the first .jar file in the same directory and runs the .jar file using java.
+The .exe gets the filename of the first .jar file in the same directory and runs the .jar file using java. Python's subprocess.call is the same as typing in command prompt.
 
 The .sh file first changes directory to Komga folder or whatever name you created and then finds & runs the .jar file using java
 
-It is possible to run the .jar file with .bat files for windows (.bat files are Windows equivalent to .sh in Linux).
+It is possible to run the .jar file with .bat files for Windows (.bat files are Windows more or less equivalent to .sh in Linux).
 
 The content of .bat files for komga with log console
 
