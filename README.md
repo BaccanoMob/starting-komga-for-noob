@@ -86,7 +86,11 @@ Just replace the .jar file with the latest version. Make sure the old .jar file 
 
 ## How to run komga automatically on start up
 
-Will add this soon after taking break
+For windows, [CLick here](windows_autostart.md)
+
+For linux, [CLick here](linux_autostart.md)
+
+Personal preference, I dont use windows for autostart since I run other apps in my laptop. I use autostart for my raspberry pi so all i need is to switch on (also I connected it with my harddrive so I have a large storage komga can acess)
 
 ## Code related gibbirsh only for people who want to how this .exe or .sh works
 
