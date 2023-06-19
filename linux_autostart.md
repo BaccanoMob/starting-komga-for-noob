@@ -16,6 +16,7 @@ This should open a text editor like terminal window. Scroll down by down-click a
 3. Continuing the line typing `/startkomga.sh`
 
 So it should look something like this at the end (Obviously without the ..., saying just in case)
+
 `@reboot /home/YOURUSERNAME/.../komga/startkomga.sh`
 
 If you reboot or whenever you turn on the Linux device it will automatically start.
