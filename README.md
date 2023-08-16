@@ -1,4 +1,4 @@
-# starting komga for noob so anyone can understand (hopefully)
+# starting Komga or Suwayomi or any other jar file for noob so anyone can understand (hopefully)
 
 I too struggled on how to start komga when I first found out about it. And prolly its still a struggle for many especially if they don't know what .jar file or any code related jargon is. I thought I'll make a guide of how I run komga right now so a noob can run it more easily than scream at the internet on how to start komga for days or maybe even years (I think couple of years for me).
 
