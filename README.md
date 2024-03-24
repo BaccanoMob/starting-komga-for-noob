@@ -1,4 +1,4 @@
-Note: I switched to using docker since its easier to update with making sure of extra steps. [Click here](komga.md) for the guide
+Note: I switched to using docker since its easier to update with making sure of extra steps. [Click here](docker.md) for the guide
 
 # starting Komga or Suwayomi or any other jar file for noob so anyone can understand (hopefully)
 
