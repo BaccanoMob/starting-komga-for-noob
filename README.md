@@ -1,3 +1,5 @@
+Note: I switched to using docker since its easier to update with making sure of extra steps. [Click here](komga.md) for the guide
+
 # starting Komga or Suwayomi or any other jar file for noob so anyone can understand (hopefully)
 
 I too struggled on how to start komga when I first found out about it. And prolly its still a struggle for many especially if they don't know what .jar file or any code related jargon is. I thought I'll make a guide of how I run komga right now so a noob can run it more easily than scream at the internet on how to start komga for days or maybe even years (I think couple of years for me).
@@ -68,7 +70,7 @@ IMPORTANT NOTE: Depending on the system the start up time might vary. For exampl
 
 ## How to access komga
 
-You can access the komga server via browser using the url `http://localhost:8080` or `http://IP_ADDRESS:8080` where IP_ADDRESS is the device's ip address in the network.
+You can access the komga server via browser using the url `http://localhost:25600` or `http://IP_ADDRESS:25600` where IP_ADDRESS is the device's ip address in the network.
 
 We can get the device's IP address using `ipconfig` in Windows' command prompt or `hostname -I` in Linux's terminal where the komga is run.
 
